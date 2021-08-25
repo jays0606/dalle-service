@@ -7,7 +7,7 @@ RUN apt-get update && \
     apt-get install -y tar && \
     apt-get install npm -y && \
 
-COPY back/requirements.txt .
+COPY dalle-server/requirements.txt .
 
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
